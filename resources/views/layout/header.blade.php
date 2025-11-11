@@ -1,8 +1,3 @@
-<style>
-    .navbar-header {
-        background: #08137a !important;
-    }
-</style>
 <header id="page-topbar">
     <div class="navbar-header">
         <div class="d-flex">

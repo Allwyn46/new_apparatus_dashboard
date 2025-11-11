@@ -9,7 +9,7 @@
                     </a>
                 </div>
                 {{-- {{ $dataTable->table() }} --}}
-                <div class="container">
+                <div class="container-fluid">
                     <h2 class="mb-4">Products</h2>
                     <div class="table-responsive">
                         <table id="productviewTable"
