@@ -15,6 +15,7 @@ use App\Http\Controllers\HotDealsController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PainterController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\relatedcontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -57,6 +58,14 @@ Route::middleware(['auth'])->group(function () {
     Route::POST('/subcategory/edit',[SubCategoryController::class,'editsubcategory']);
     Route::POST('/subcategory/delete',[SubCategoryController::class,'deleteSubCategory']);
     Route::POST('/subcategory/fetchallsubcategory', [SubCategoryController::class, 'fetchallSubCategory']);
+
+    //RELATED PRODUCTS
+    Route::GET('/relatedprods/view',[relatedcontroller::class,'index']);
+    Route::POST('/relatedprods/fetch',[SubCategoryController::class,'index']);
+    Route::POST('/relatedprods/add',[SubCategoryController::class,'addsubcategory']);
+    Route::POST('/relatedprods/edit',[SubCategoryController::class,'editsubcategory']);
+    Route::POST('/relatedprods/delete',[SubCategoryController::class,'deleteSubCategory']);
+    Route::POST('/relatedprods/fetchallsubcategory', [SubCategoryController::class, 'fetchallSubCategory']);
 
     // PRODUCT 
     Route::GET('/product/view',[ProductController::class,'index']);

@@ -19,7 +19,7 @@
                     <li><a href="{{ url('/product/view') }}" data-key="t-inbox">All Products</a></li>
                             <li><a href="{{ url('/category/view') }}" data-key="t-inbox">Categories</a></li>
                             <li><a href="{{ url('/subcategory/view') }}" data-key="t-inbox">Sub-Categories</a></li>
-
+                            <li><a href="{{ url('/relatedprods/view') }}" data-key="t-inbox">Related Products</a></li>
                 @endif
 
             </ul>
